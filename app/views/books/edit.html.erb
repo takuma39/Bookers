@@ -1,2 +1,27 @@
-<h1>Books#edit</h1>
-<p>Find me in app/views/books/edit.html.erb</p>
+
+    <h1>Editing Book</h1>
+
+<form class="edit_book" id="edit_book_202702" action="/books/202702" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="_method" value="patch"><input type="hidden" name="authenticity_token" value="p2FgeDdztMhOxJ8OCVfntCToXjs2HZZD5ICTXFWWg6FNbkwsK9IT2eappxWayEC/3j3BIDtUsjoRTLO0ccUV9w==">
+
+<%= form_for(@book) do |f| %>
+
+  <div class="field">
+    <label for="book_title">Title</label>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <label for="book_body">Body</label>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit '保存' %>
+  </div>
+
+  <% end %>
+
+</form>
+
+<a class="show_202702" href="/books/202702">Show</a> |
+<a class="back" href="/books">Back</a>
