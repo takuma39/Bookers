@@ -23,6 +23,10 @@
   line-height: 18px;
 }
 
+.flash {
+  color: green;
+}
+
 a {
   text-decoration: underline;
 }
