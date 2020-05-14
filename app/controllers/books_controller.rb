@@ -18,6 +18,7 @@ class BooksController < ApplicationController
        flash[:notice] = "Book was successfully created."
        redirect_to book_path(@book)
    else
+   	   @error_message = "error"
    	   render "new"
    	end
   end

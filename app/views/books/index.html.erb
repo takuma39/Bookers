@@ -1,4 +1,9 @@
-<p id="notice"></p>
+
+<% if @error_message %>
+  <div class="form-error">
+    <%= @error_message %>
+  </div>
+<% end %>
 
 <h1>Books</h1>
 
@@ -47,3 +52,4 @@
   </div>
 
 <% end %>
+
